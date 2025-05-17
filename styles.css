@@ -1,6 +1,87 @@
-h2 {
-    color: rgb(41, 186, 19);
-    font-size: 3em;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(235, 235, 226);
+    padding: 15px;
+    text-align: justify;
+}
+
+header {
+    background-color: rgb(6, 7, 85);
+    color: rgb(223, 232, 235);
+    padding: 10px;
+    text-align: left;
+}
+header p{
+    margin:0;
+    font-size: 18px;
+}
+
+
+footer {
+    background-color: rgb(43, 11, 73);
+    color: rgb(201, 117, 13);
     text-align: center;
-    text-decoration: solid underline;
+}
+nav {
+    background-color: rgb(3, 67, 151);
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a {
+    display: unline-block;
+    padding: 20px 10px;
+    color: aliceblue;
+}
+nav a{
+    margin:0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 2em;
+}
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white ;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+border: 1px solid rgb(226, 212, 212);
+text-align: left;
+padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: rgb(233, 235, 238);
+}
+h1{
+    color: darkblue;
+    font-size: 2em;
+    text-decoration: solid;
+    text-align: left;
+    
+}
+
+h2, h3 {
+    color: black;
+    font-size: 1.5em;
+    text-align: left;
+    text-decoration: solid;
 }
