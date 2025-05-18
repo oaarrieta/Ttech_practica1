@@ -18,7 +18,7 @@
         <p><strong>Telefono:</strong> 3045376513</p>
         <p><strong>Dirección:</strong> Cali Valle del Cauca, Colombia</p>
         <p><strong>Coerreo E:</strong> octavio.arrieta.ttv.948@unilibre.edu.co</p> 
-        <img src="imagenes/foto-perfil.png" alt="Octavio Andres ARRIETA BRAVO" class="foto" >
+        <img src="imagenes\Imagen_Perfil.jpg" alt="Octavio Andres ARRIETA BRAVO" class="foto" >
 
     </header>
 
@@ -29,22 +29,23 @@
             <li><a href="#Formacion">Formacion Academica</a></li>
             <li><a href="#Conocimientos">Conocimientos Técnicos</a></li>
             <li><a href="#Idiomas">Idiomas</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
         </ul> 
     </nav>
 
     <section id="Perfil">
         <h2>Perfil Profesional</h2>
     <p> Ingeniero Electrónico y Tecnólogo en Electricidad Industrial con más de 7 años de 
-       experiencia en plantas del sector industrial, donde he desempeñado funciones claves en 
+       experiencia en plantas del sector industrial, desempeñado funciones claves en 
        diferentes proyectos de construcción y automatización de procesos en este sector y mantenimiento de las mismas.</p>
     </section>
 
     <section id="Experiencia">
         <h2>Experiencia Profesional</h2>
         <ul>
-            <li><a href="https://www.baxter.com.co/es" target="_blank">Laboratorios Baxter Cali Valle</a>
+            <li><a href="https://www.baxter.com.co/es" target="_blank">Laboratorios Baxter, Cali Valle: </a>
                 Tecnico de mantenimiento electromecanico de las areas de manufactura, llenado de liquidos y empaque</li>
-            <li><a href="https://www.reckitt.com/offices/colombia/" target="_blank">Reckitt Benkiser Colombia</a>
+            <li><a href="https://www.reckitt.com/offices/colombia/" target="_blank">Reckitt Benkiser Colombia:</a>
                 Tecnico de mantenimiento electromecanico de equipos de fabricacion, llenado y empaque final</li>
         </ul>
     </section>
@@ -52,9 +53,9 @@
     <section id="Formacion">
         <h2>Formacion Academica</h2>
         <ol>
-            <li>Ingeniero Electronico.<a href="https://www.uniajc.edu.co/" target="_blank">Universidad Antonio Jose Camacho</a>, Cali Valle. 2025</li>
-            <li>Diplomado en Indsutria 4.0 e IIOT.<a href="https://www.uniajc.edu.co/" target="_blank">Universidad Antonio Jose Camacho</a>, Cali Valle. 2025</li>
-            <li>Tecnologo Electricista Industrial.<a href="https://cipbolivar.blogspot.com/" target="_blank">Servicio Nacional de Apredizaje</a>, Cartagena Bolivar. 2016</li>
+            <li>Ingeniero Electronico: <a href="https://www.uniajc.edu.co/" target="_blank">Universidad Antonio Jose Camacho</a>, Cali Valle. 2025</li>
+            <li>Diplomado en Indsutria 4.0 e IIOT: <a href="https://www.uniajc.edu.co/" target="_blank">Universidad Antonio Jose Camacho</a>, Cali Valle. 2025</li>
+            <li>Tecnologo Electricista Industrial: <a href="https://cipbolivar.blogspot.com/" target="_blank">Servicio Nacional de Apredizaje</a>, Cartagena Bolivar. 2016</li>
          </ol>
 
     </section>
@@ -71,7 +72,7 @@
             </tr>
             <tr>
                 <td>Ingles</td>
-                <td>Basico Tecnico</td>
+                <td>Básico</td>
             </tr>
         </table>
     </section>
@@ -111,6 +112,48 @@
         </table>
     </section>
 
+    <section id="Contacto" class="seccion-formulario">
+    <h2>Formulario de Contacto</h2>
+    <form class="form-contacto" action="/submit" method="POST">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="empresa">Nombre de la Empresa</label>
+                <input 
+                    type="text" 
+                    id="empresa" 
+                    name="empresa" 
+                    placeholder="Ej: Soluciones inmediatas S.a.s. "
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea 
+                id="mensaje" 
+                name="mensaje" 
+                placeholder="Describe tu asunto y consulta a realizar..." 
+                required></textarea>
+        </div>
+
+        <button type="submit">Enviar Consulta</button>
+    </form>
+</section>
 
 </body>
 </html>
