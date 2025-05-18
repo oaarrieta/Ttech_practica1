@@ -29,6 +29,7 @@
             <li><a href="#Formacion">Formacion Academica</a></li>
             <li><a href="#Conocimientos">Conocimientos Técnicos</a></li>
             <li><a href="#Idiomas">Idiomas</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
         </ul> 
     </nav>
 
@@ -111,6 +112,48 @@
         </table>
     </section>
 
+    <section id="Contacto" class="seccion-formulario">
+    <h2>Formulario de Contacto</h2>
+    <form class="form-contacto" action="/submit" method="POST">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="empresa">Nombre de la Empresa</label>
+                <input 
+                    type="text" 
+                    id="empresa" 
+                    name="empresa" 
+                    placeholder="Ej: Soluciones inmediatas S.a.s. "
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea 
+                id="mensaje" 
+                name="mensaje" 
+                placeholder="Describe tu asunto y consulta a realizar..." 
+                required></textarea>
+        </div>
+
+        <button type="submit">Enviar Consulta</button>
+    </form>
+</section>
 
 </body>
 </html>
